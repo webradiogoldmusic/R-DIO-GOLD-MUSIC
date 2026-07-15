@@ -1,1 +1,97 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
 
+body{
+background:#000;
+color:#fff;
+}
+
+header{
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:20px;
+background:#111;
+border-bottom:2px solid gold;
+}
+
+.logo{
+width:180px;
+margin-bottom:15px;
+}
+
+nav{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav a{
+color:gold;
+text-decoration:none;
+font-weight:bold;
+}
+
+.banner{
+text-align:center;
+padding:60px 20px;
+background:linear-gradient(to bottom,#000,#111);
+}
+
+.banner h1{
+font-size:40px;
+color:gold;
+margin-bottom:15px;
+}
+
+.banner p{
+font-size:18px;
+margin-bottom:20px;
+}
+
+.banner button{
+background:gold;
+color:#000;
+border:none;
+padding:12px 20px;
+margin:5px;
+border-radius:30px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.tocando{
+text-align:center;
+padding:40px 20px;
+background:#111;
+}
+
+.tocando h2{
+color:gold;
+margin-bottom:15px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+border-top:2px solid gold;
+background:#111;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+.banner h1{
+font-size:28px;
+}
+
+.logo{
+width:140px;
+}
+
+}
