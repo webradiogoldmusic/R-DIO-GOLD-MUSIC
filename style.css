@@ -2,7 +2,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
 }
 
 body{
@@ -24,6 +24,17 @@ width:180px;
 margin-bottom:15px;
 }
 
+header h1{
+color:gold;
+margin-top:10px;
+font-size:32px;
+}
+
+header p{
+color:#ddd;
+margin:10px 0 20px;
+}
+
 nav{
 display:flex;
 gap:15px;
@@ -35,34 +46,53 @@ nav a{
 color:gold;
 text-decoration:none;
 font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:white;
 }
 
 .banner{
+background:linear-gradient(135deg,#111,#000);
+padding:80px 20px;
 text-align:center;
-padding:60px 20px;
-background:linear-gradient(to bottom,#000,#111);
+}
+
+.banner h2{
+color:gold;
+font-size:22px;
+margin-bottom:15px;
 }
 
 .banner h1{
-font-size:40px;
-color:gold;
-margin-bottom:15px;
+font-size:42px;
+color:#fff;
+margin-bottom:20px;
 }
 
 .banner p{
 font-size:18px;
-margin-bottom:20px;
+color:#ccc;
+max-width:700px;
+margin:0 auto 30px;
 }
 
 .banner button{
 background:gold;
 color:#000;
 border:none;
-padding:12px 20px;
-margin:5px;
-border-radius:30px;
+padding:15px 30px;
+margin:10px;
+border-radius:50px;
+font-size:18px;
 font-weight:bold;
 cursor:pointer;
+transition:.3s;
+}
+
+.banner button:hover{
+transform:scale(1.05);
 }
 
 .tocando{
@@ -86,21 +116,28 @@ margin-top:30px;
 
 @media(max-width:768px){
 
-.banner h1{
-font-size:28px;
-}
-
 .logo{
 width:140px;
 }
 
 header h1{
-    color: gold;
-    margin-top: 10px;
-    font-size: 32px;
+font-size:26px;
 }
 
-header p{
-    color: #ddd;
-    margin: 10px 0 20px;
+.banner h1{
+font-size:30px;
+}
+
+.banner h2{
+font-size:18px;
+}
+
+.banner p{
+font-size:16px;
+}
+
+.banner button{
+width:100%;
+max-width:300px;
+}
 }
