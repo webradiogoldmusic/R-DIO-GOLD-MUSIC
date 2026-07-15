@@ -94,4 +94,13 @@ font-size:28px;
 width:140px;
 }
 
+header h1{
+    color: gold;
+    margin-top: 10px;
+    font-size: 32px;
+}
+
+header p{
+    color: #ddd;
+    margin: 10px 0 20px;
 }
