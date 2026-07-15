@@ -54,8 +54,9 @@ color:gold;
 
 .menu-btn{
 position:absolute;
-top:20px;
+top:100%;
 right:20px;
+margin-top:15px;
 background:gold;
 border:none;
 font-size:25px;
@@ -63,6 +64,13 @@ padding:10px 15px;
 border-radius:10px;
 cursor:pointer;
 z-index:10;
+}
+
+header{
+position:relative;
+background:#000;
+border-bottom:2px solid gold;
+padding-bottom:60px;
 }
 
 .banner{
