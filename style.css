@@ -18,6 +18,7 @@ header{
 position:relative;
 background:#000;
 border-bottom:2px solid gold;
+z-index:10;
 }
 
 
