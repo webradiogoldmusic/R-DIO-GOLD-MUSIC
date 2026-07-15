@@ -3,38 +3,102 @@
 console.log("WebRádio Gold Music iniciada!");
 
 
-// Botão ouvir rádio
-const ouvirBtn = document.querySelector(".banner button");
+// Botão Tocando Agora
+
+const ouvirBtn = document.querySelector("#ouvir");
 
 if (ouvirBtn) {
+
     ouvirBtn.addEventListener("click", () => {
+
         alert("Em breve a transmissão da WebRádio Gold Music estará disponível!");
+
     });
+
 }
 
 
-// Menu Mobile ☰
-const menuBtn = document.querySelector(".menu-btn");
-const nav = document.querySelector("nav");
 
-if (menuBtn && nav) {
+// MENU LATERAL
+
+const menuBtn = document.querySelector(".menu-btn");
+
+const menu = document.querySelector(".menu");
+
+const overlay = document.querySelector(".overlay");
+
+
+
+function abrirMenu(){
+
+    menu.classList.add("active");
+
+    overlay.classList.add("active");
+
+}
+
+
+
+function fecharMenu(){
+
+    menu.classList.remove("active");
+
+    overlay.classList.remove("active");
+
+}
+
+
+
+if(menuBtn && menu && overlay){
+
 
     menuBtn.addEventListener("click", () => {
 
-        if (nav.style.display === "flex") {
-            nav.style.display = "none";
-        } else {
-            nav.style.display = "flex";
+
+        if(menu.classList.contains("active")){
+
+            fecharMenu();
+
+        }else{
+
+            abrirMenu();
+
         }
+
 
     });
 
 
-    // Fecha o menu clicando fora
-    document.addEventListener("click", (event) => {
 
-        if (!menuBtn.contains(event.target) && !nav.contains(event.target)) {
-            nav.style.display = "none";
+    // Fecha clicando fora
+
+    overlay.addEventListener("click", () => {
+
+        fecharMenu();
+
+    });
+
+
+
+    // Fecha ao clicar em algum item
+
+    const links = document.querySelectorAll(".menu-links a");
+
+
+    links.forEach(link => {
+
+
+        link.addEventListener("click", () => {
+
+            fecharMenu();
+
+        });
+
+
+    });
+
+
+}            nav.style.display = "none";
         }
 
     });
