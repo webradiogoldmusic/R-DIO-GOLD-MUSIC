@@ -38,9 +38,9 @@ top:20px;
 
 left:20px;
 
-width:45px;
-
 height:45px;
+
+padding:0 18px;
 
 background:#000;
 
@@ -48,9 +48,11 @@ color:gold;
 
 border:2px solid gold;
 
-border-radius:50%;
+border-radius:25px;
 
-font-size:25px;
+font-size:16px;
+
+font-weight:bold;
 
 cursor:pointer;
 
@@ -62,8 +64,11 @@ align-items:center;
 
 justify-content:center;
 
-}
+gap:8px;
 
+white-space:nowrap;
+
+}
 
 
 /* FUNDO ESCURO */
