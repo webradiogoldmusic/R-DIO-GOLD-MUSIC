@@ -412,3 +412,105 @@ footer{
     }
 
 }
+/* ===========================
+   SEÇÃO A RÁDIO
+=========================== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+.sobre-radio{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    padding:90px 8%;
+    background:#000;
+}
+
+.texto-radio{
+    flex:1;
+}
+
+.texto-radio span{
+    display:inline-block;
+    color:gold;
+    font-size:18px;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:15px;
+}
+
+.texto-radio h2{
+    font-size:48px;
+    color:#fff;
+    margin-bottom:25px;
+    line-height:1.2;
+}
+
+.texto-radio p{
+    color:#cfcfcf;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.btn-gold{
+    display:inline-block;
+    margin-top:15px;
+    background:gold;
+    color:#000;
+    padding:15px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-gold:hover{
+    transform:scale(1.05);
+    background:#fff;
+}
+
+.imagem-radio{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.imagem-radio img{
+    width:100%;
+    max-width:600px;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.imagem-radio img:hover{
+    transform:scale(1.03);
+}
+
+/* CELULAR */
+
+@media(max-width:900px){
+
+.sobre-radio{
+    flex-direction:column-reverse;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.texto-radio h2{
+    font-size:34px;
+}
+
+.texto-radio p{
+    font-size:16px;
+}
+
+.imagem-radio img{
+    max-width:350px;
+}
+
+}
